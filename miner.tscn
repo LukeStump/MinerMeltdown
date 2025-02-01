@@ -16,3 +16,5 @@ shape = SubResource("CapsuleShape2D_rjl1q")
 [node name="FrontNormal" type="Sprite2D" parent="."]
 position = Vector2(5, 0)
 texture = ExtResource("2_qsl0s")
+
+[node name="Camera2D" type="Camera2D" parent="."]
