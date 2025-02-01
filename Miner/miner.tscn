@@ -2,53 +2,53 @@
 
 [ext_resource type="Script" path="res://Miner/miner.gd" id="1_05lf5"]
 [ext_resource type="Texture2D" uid="uid://cogp6jxvygrgb" path="res://Miner/MINERstill.png" id="2_ry38b"]
-[ext_resource type="Texture2D" uid="uid://d2o6othggu6g7" path="res://Miner/MinerWalk1-sheet.png" id="3_hmafa"]
+[ext_resource type="Texture2D" uid="uid://ceyer64wf1brb" path="res://Miner/MinerWalk1-sheetUPSCALED.png" id="3_pbnml"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
-radius = 11.0
-height = 32.0
+radius = 22.0
+height = 64.0
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w2tcy"]
-atlas = ExtResource("3_hmafa")
-region = Rect2(0, 0, 28, 34)
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwaws"]
+atlas = ExtResource("3_pbnml")
+region = Rect2(0, 0, 56, 68)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8coeo"]
-atlas = ExtResource("3_hmafa")
-region = Rect2(28, 0, 28, 34)
+[sub_resource type="AtlasTexture" id="AtlasTexture_7svhk"]
+atlas = ExtResource("3_pbnml")
+region = Rect2(56, 0, 56, 68)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4m83a"]
-atlas = ExtResource("3_hmafa")
-region = Rect2(56, 0, 28, 34)
+[sub_resource type="AtlasTexture" id="AtlasTexture_grfun"]
+atlas = ExtResource("3_pbnml")
+region = Rect2(112, 0, 56, 68)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dto1v"]
-atlas = ExtResource("3_hmafa")
-region = Rect2(84, 0, 28, 34)
+[sub_resource type="AtlasTexture" id="AtlasTexture_hvqkm"]
+atlas = ExtResource("3_pbnml")
+region = Rect2(168, 0, 56, 68)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_pco5c"]
-atlas = ExtResource("3_hmafa")
-region = Rect2(112, 0, 28, 34)
+[sub_resource type="AtlasTexture" id="AtlasTexture_atmvi"]
+atlas = ExtResource("3_pbnml")
+region = Rect2(224, 0, 56, 68)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_66vga"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_w2tcy")
+"texture": SubResource("AtlasTexture_wwaws")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8coeo")
+"texture": SubResource("AtlasTexture_7svhk")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4m83a")
+"texture": SubResource("AtlasTexture_grfun")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_dto1v")
+"texture": SubResource("AtlasTexture_hvqkm")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_pco5c")
+"texture": SubResource("AtlasTexture_atmvi")
 }],
 "loop": true,
-"name": &"default",
-"speed": 8.0
+"name": &"new_animation",
+"speed": 5.0
 }]
 
 [node name="Miner" type="CharacterBody2D"]
@@ -65,6 +65,6 @@ position = Vector2(0, -2)
 texture = ExtResource("2_ry38b")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -1)
+position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_66vga")
-frame_progress = 0.32676
+animation = &"new_animation"
