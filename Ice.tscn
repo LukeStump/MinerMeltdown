@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://boh8ney7lp7lh"]
+
+[ext_resource type="Script" path="res://ice.gd" id="1_hreht"]
+[ext_resource type="Texture2D" uid="uid://djvy3p8nyje2m" path="res://icon.svg" id="2_rfhuo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4w0bm"]
+
+[node name="Ice" type="StaticBody2D"]
+script = ExtResource("1_hreht")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(7.62939e-06, 0)
+scale = Vector2(0.179688, 0.179688)
+texture = ExtResource("2_rfhuo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4w0bm")
