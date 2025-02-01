@@ -6,10 +6,10 @@
 [node name="Test" type="Node2D"]
 
 [node name="Miner" parent="." instance=ExtResource("1_vf245")]
-position = Vector2(642, 100)
+position = Vector2(66, 14)
 
 [node name="Floor" parent="." instance=ExtResource("2_qr815")]
-position = Vector2(2112, 772)
+position = Vector2(144, 69)
 
 [node name="Floor2" parent="." instance=ExtResource("2_qr815")]
-position = Vector2(-456, 763)
+position = Vector2(16, 69)
