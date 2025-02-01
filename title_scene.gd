@@ -1,8 +1,5 @@
 extends Node2D
 
-#func _input(event):
-	#if event.is_action_pressed("ui_cancel"):
-		#get_tree().quit()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,3 +9,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_button_pressed() -> void:
+	SceneSwitcher.start_game()
+	pass # Replace with function body.
