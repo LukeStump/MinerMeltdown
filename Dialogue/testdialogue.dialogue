@@ -1,6 +1,6 @@
 ~ start
 Jerry: Alright pal. You’re gonna go into these here ice mines, 
-Jerry: and melt as many weird things out of the ice as you can, then photograph it for the museum. 
+Jerry: and melt as much shit out of the ice as you can, then photograph it for the museum. 
 Jerry: Everytime you take a photo of something, It’ll automatically upload to the server 
 Jerry: and I’ll be able to see it, too.
 Jerry: I know you might be a bit rusty since the last time we went, so I’ll help you along. [wave]KHHK-[/wave] OVER.
@@ -16,7 +16,7 @@ Jerry: Stupid ass deer if you ask me. OVER.
 Jerry: Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
 
 ~ fish_interact
-Jerry: That is one ugly fish. Is that two tails?? The more the merrier, I guess. OVER.
+Jerry: That is one wicked ugly fish. Is that two tails?? The more the merrier, I guess. OVER.
 
 ~ satchel_interact
 You: That’s a picture of Jerry and I from the last excavation.
@@ -34,7 +34,8 @@ Jerry: Oh well. OVER.
 
 ~ jerry_interact
 
-Jerry: Hello? [wait=0.5] What did you find? [wait=0.5] 
+Jerry: Hello? [wait=0.5] I'm talkie-walkin to you! 
+What did you find?
 You still there?
 
 => END

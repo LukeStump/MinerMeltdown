@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://main.gd" id="1_7pk7y"]
 [ext_resource type="PackedScene" uid="uid://dkmg7anlmcbpk" path="res://Miner/miner.tscn" id="2_t7m4j"]
+
 [ext_resource type="PackedScene" uid="uid://boh8ney7lp7lh" path="res://IceThings/Ice.tscn" id="4_ja5c6"]
 [ext_resource type="Texture2D" uid="uid://chro7xoammedg" path="res://Background/bg_black.png" id="5_pdoyw"]
 [ext_resource type="Texture2D" uid="uid://dwhsmtoloen7y" path="res://Background/bg_1.png" id="5_qoudf"]
