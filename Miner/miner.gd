@@ -13,6 +13,7 @@ func _unhandled_input(_event: InputEvent) -> void:
 		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/testdialogue.dialogue"), "start")
 		return
 
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
