@@ -20,13 +20,13 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("4_wxdpd")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 5.0
 }]
 
 [sub_resource type="GDScript" id="GDScript_epi0n"]
-script/source = "extends Sprite2D
+script/source = "extends AnimatedSprite2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -42,6 +42,7 @@ func _process(delta: float) -> void:
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_action_pressed(\"click\"):
 		print(\"ouch you clicked me\")
+		frame += 1
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6wsn"]
@@ -57,3 +58,5 @@ script = SubResource("GDScript_epi0n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(12.1956, 9.26227)
 shape = SubResource("RectangleShape2D_a6wsn")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

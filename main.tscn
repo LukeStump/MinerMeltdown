@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://cv8gnur8cpwwq"]
+[gd_scene load_steps=4 format=3 uid="uid://cv8gnur8cpwwq"]
 
 [ext_resource type="PackedScene" uid="uid://diq1orq34j6cc" path="res://floor.tscn" id="1_4fs1c"]
+[ext_resource type="Script" path="res://main.gd" id="1_7pk7y"]
 [ext_resource type="PackedScene" uid="uid://dkmg7anlmcbpk" path="res://miner.tscn" id="2_t7m4j"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_7pk7y")
 
 [node name="Floor" parent="." instance=ExtResource("1_4fs1c")]
 position = Vector2(75, 49)

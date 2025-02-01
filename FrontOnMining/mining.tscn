@@ -5,4 +5,4 @@
 [node name="Mining" type="Node2D"]
 
 [node name="FrontOnIce" parent="." instance=ExtResource("1_v5pd4")]
-position = Vector2(510, 268)
+position = Vector2(73, 44)
