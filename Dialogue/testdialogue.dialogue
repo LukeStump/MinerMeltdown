@@ -1,0 +1,40 @@
+~ start
+Jerry: Alright pal. You’re gonna go into these here ice mines, 
+Jerry: and melt as many weird things out of the ice as you can, then photograph it for the museum. 
+Jerry: Everytime you take a photo of something, It’ll automatically upload to the server 
+Jerry: and I’ll be able to see it, too.
+Jerry: I know you might be a bit rusty since the last time we went, so I’ll help you along. [wave]KHHK-[/wave] OVER.
+
+~ rock_interact
+Jerry: A rock? [wave]WOW[/wave], what a treasure! NOT. Keep goin. OVER.
+
+~ deerskull_interact
+Jerry: Is that a deer? Why was there a freakin deer down this deep? 
+Jerry: Stupid ass deer if you ask me. OVER.
+
+~ tree_interact
+Jerry: Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
+
+~ fish_interact
+Jerry: That is one ugly fish. Is that two tails?? The more the merrier, I guess. OVER.
+
+~ satchel_interact
+You: That’s a picture of Jerry and I from the last excavation.
+You: I wonder which guy on the team dropped their whole satchel down here?
+You: ...
+
+~ notDeer_interact
+Jerry: Now [wave]WHAT[/wave] in God’s Green Earth is that thing? The deers inbreeding now? 
+Jerry: I wouldn’t wanna hit THAT on the I-95. Jesus Christ. OVER.
+
+~ alien_interact
+Jerry: The photo resolution’s kinda blurry on this one. There might be a server disconnection. 
+Jerry: I don’t even know what I’m lookin at, honestly. 
+Jerry: Oh well. OVER.
+
+~ jerry_interact
+
+Jerry: Hello? [wait=0.5] What did you find? [wait=0.5] 
+You still there?
+
+=> END

@@ -4,8 +4,15 @@ extends CharacterBody2D
 const SPEED = 50.0
 #const JUMP_VELOCITY = -400.0
 
+
 @onready
 var animation = get_node("AnimatedSprite2D")
+
+func _unhandled_input(_event: InputEvent) -> void:
+	if Input.is_action_just_pressed("dialogue_click"):
+		DialogueManager.show_example_dialogue_balloon(load("res://Dialogue/testdialogue.dialogue"), "start")
+		return
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
