@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://dkmg7anlmcbpk"]
+[gd_scene load_steps=13 format=3 uid="uid://dkmg7anlmcbpk"]
 
 [ext_resource type="Script" path="res://Miner/miner.gd" id="1_05lf5"]
 [ext_resource type="Texture2D" uid="uid://cogp6jxvygrgb" path="res://Miner/MINERstill.png" id="2_ry38b"]
 [ext_resource type="Texture2D" uid="uid://ceyer64wf1brb" path="res://Miner/MinerWalk1-sheetUPSCALED.png" id="3_pbnml"]
+[ext_resource type="Texture2D" uid="uid://d2nffvc32u1g4" path="res://IceThings/IceBlock.png" id="4_a0gir"]
+[ext_resource type="Texture2D" uid="uid://chro7xoammedg" path="res://Background/bg_black.png" id="5_45hp7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
 radius = 22.0
@@ -31,7 +33,7 @@ region = Rect2(224, 0, 56, 68)
 [sub_resource type="SpriteFrames" id="SpriteFrames_66vga"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 0.01,
 "texture": SubResource("AtlasTexture_wwaws")
 }, {
 "duration": 1.0,
@@ -45,10 +47,13 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_atmvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwaws")
 }],
 "loop": true,
 "name": &"new_animation",
-"speed": 5.0
+"speed": 8.0
 }]
 
 [node name="Miner" type="CharacterBody2D"]
@@ -68,3 +73,18 @@ texture = ExtResource("2_ry38b")
 position = Vector2(0, -2)
 sprite_frames = SubResource("SpriteFrames_66vga")
 animation = &"new_animation"
+
+[node name="IceBlock" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(63, -2)
+texture = ExtResource("4_a0gir")
+
+[node name="BgBlack" type="Sprite2D" parent="."]
+position = Vector2(-9.77516e-06, 63)
+scale = Vector2(6.64, 1.24)
+texture = ExtResource("5_45hp7")
+
+[node name="BgBlack2" type="Sprite2D" parent="."]
+position = Vector2(-2.38419e-07, -67)
+scale = Vector2(6.64, 1.24)
+texture = ExtResource("5_45hp7")

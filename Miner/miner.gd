@@ -16,12 +16,8 @@ func _unhandled_input(_event: InputEvent) -> void:
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept"):
-		get_tree().change_scene_to_file("res://FrontOnMining/frontMining.tscn")
+	#if not is_on_floor():
+		#velocity += get_gravity() * delta
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -29,6 +25,7 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * SPEED
 		animation.flip_h = direction < 0
+		#animation.
 		animation.play()
 	else:
 		animation.stop()
