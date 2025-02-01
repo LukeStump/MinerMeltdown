@@ -5,11 +5,10 @@ extends StaticBody2D
 func _ready() -> void:
 	pass # Replace with function body.
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	input_pickable = true
 
-func _input(event: InputEvent) -> void:
+func _input_event (viewport:Viewport, event:InputEvent, shape_idx:int) -> void:
 	if event.is_action_pressed("click"):
 		queue_free()
