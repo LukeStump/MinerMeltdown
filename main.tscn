@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://diq1orq34j6cc" path="res://floor.tscn" id="1_4fs1c"]
 [ext_resource type="Script" path="res://main.gd" id="1_7pk7y"]
 [ext_resource type="PackedScene" uid="uid://dkmg7anlmcbpk" path="res://Miner/miner.tscn" id="2_t7m4j"]
-[ext_resource type="PackedScene" uid="uid://boh8ney7lp7lh" path="res://Ice.tscn" id="4_ja5c6"]
+[ext_resource type="PackedScene" uid="uid://boh8ney7lp7lh" path="res://IceThings/Ice.tscn" id="4_ja5c6"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_7pk7y")
@@ -11,23 +11,29 @@ script = ExtResource("1_7pk7y")
 [node name="Floor" parent="." instance=ExtResource("1_4fs1c")]
 position = Vector2(75, 49)
 
+[node name="Floor4" parent="." instance=ExtResource("1_4fs1c")]
+position = Vector2(-53, 49)
+
 [node name="Miner" parent="." instance=ExtResource("2_t7m4j")]
-position = Vector2(72, 23)
+position = Vector2(33, 10)
 
 [node name="Floor2" parent="." instance=ExtResource("1_4fs1c")]
 position = Vector2(203, 49)
 
+[node name="Floor3" parent="." instance=ExtResource("1_4fs1c")]
+position = Vector2(330, 49)
+
 [node name="Ice" parent="." instance=ExtResource("4_ja5c6")]
-position = Vector2(151, 28)
+position = Vector2(99, 7)
 
 [node name="Ice2" parent="." instance=ExtResource("4_ja5c6")]
-position = Vector2(175, 28)
+position = Vector2(235, 7)
 
 [node name="Ice3" parent="." instance=ExtResource("4_ja5c6")]
-position = Vector2(198, 28)
+position = Vector2(167, 7)
 
 [node name="Ice4" parent="." instance=ExtResource("4_ja5c6")]
-position = Vector2(279, 51)
+position = Vector2(303, 7)
 
 [node name="Ice5" parent="." instance=ExtResource("4_ja5c6")]
-position = Vector2(301, 51)
+position = Vector2(371, 7)
