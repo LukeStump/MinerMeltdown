@@ -13,6 +13,3 @@ position = Vector2(2112, 772)
 
 [node name="Floor2" parent="." instance=ExtResource("2_qr815")]
 position = Vector2(-456, 763)
-
-[node name="Miner2" parent="." instance=ExtResource("1_vf245")]
-position = Vector2(645, 334)
