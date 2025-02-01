@@ -1,21 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://dkmg7anlmcbpk"]
 
-[ext_resource type="Script" path="res://miner.gd" id="1_05lf5"]
-[ext_resource type="Texture2D" uid="uid://h8tpmmdlo64u" path="res://front_normal.png" id="2_qsl0s"]
+[ext_resource type="Script" path="res://Miner/miner.gd" id="1_05lf5"]
+[ext_resource type="Texture2D" uid="uid://cogp6jxvygrgb" path="res://Miner/MINERstill.png" id="2_ry38b"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
-radius = 38.0
-height = 194.0
+radius = 11.0
+height = 32.0
 
 [node name="Miner" type="CharacterBody2D"]
-scale = Vector2(0.114676, 0.114676)
 script = ExtResource("1_05lf5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_rjl1q")
 
-[node name="FrontNormal" type="Sprite2D" parent="."]
-position = Vector2(5, 0)
-texture = ExtResource("2_qsl0s")
-
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="MineRstill" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+texture = ExtResource("2_ry38b")

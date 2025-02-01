@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://blnxv3kyhird6"]
 
-[ext_resource type="PackedScene" uid="uid://dkmg7anlmcbpk" path="res://miner.tscn" id="1_vf245"]
+[ext_resource type="PackedScene" uid="uid://dkmg7anlmcbpk" path="res://Miner/miner.tscn" id="1_vf245"]
 [ext_resource type="PackedScene" uid="uid://diq1orq34j6cc" path="res://floor.tscn" id="2_qr815"]
 
 [node name="Test" type="Node2D"]
