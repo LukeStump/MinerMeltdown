@@ -1,11 +1,55 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkmg7anlmcbpk"]
+[gd_scene load_steps=11 format=3 uid="uid://dkmg7anlmcbpk"]
 
 [ext_resource type="Script" path="res://Miner/miner.gd" id="1_05lf5"]
 [ext_resource type="Texture2D" uid="uid://cogp6jxvygrgb" path="res://Miner/MINERstill.png" id="2_ry38b"]
+[ext_resource type="Texture2D" uid="uid://d2o6othggu6g7" path="res://Miner/MinerWalk1-sheet.png" id="3_hmafa"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
 radius = 11.0
 height = 32.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2tcy"]
+atlas = ExtResource("3_hmafa")
+region = Rect2(0, 0, 28, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8coeo"]
+atlas = ExtResource("3_hmafa")
+region = Rect2(28, 0, 28, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4m83a"]
+atlas = ExtResource("3_hmafa")
+region = Rect2(56, 0, 28, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dto1v"]
+atlas = ExtResource("3_hmafa")
+region = Rect2(84, 0, 28, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pco5c"]
+atlas = ExtResource("3_hmafa")
+region = Rect2(112, 0, 28, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_66vga"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2tcy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8coeo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4m83a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dto1v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pco5c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [node name="Miner" type="CharacterBody2D"]
 script = ExtResource("1_05lf5")
@@ -16,5 +60,11 @@ shape = SubResource("CapsuleShape2D_rjl1q")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="MineRstill" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(0, -2)
 texture = ExtResource("2_ry38b")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+sprite_frames = SubResource("SpriteFrames_66vga")
+frame_progress = 0.32676
