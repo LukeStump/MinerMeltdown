@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dkmg7anlmcbpk"]
+
+[ext_resource type="Script" path="res://miner.gd" id="1_05lf5"]
+[ext_resource type="Texture2D" uid="uid://h8tpmmdlo64u" path="res://front_normal.png" id="2_qsl0s"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
+radius = 38.0
+height = 194.0
+
+[node name="Miner" type="CharacterBody2D"]
+script = ExtResource("1_05lf5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_rjl1q")
+
+[node name="FrontNormal" type="Sprite2D" parent="."]
+position = Vector2(5, 0)
+texture = ExtResource("2_qsl0s")
