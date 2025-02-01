@@ -1,14 +1,16 @@
-extends StaticBody2D
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	input_pickable = true
+	pass
 
-func _input_event (viewport:Viewport, event:InputEvent, shape_idx:int) -> void:
-	if event.is_action_pressed("click"):
-		queue_free()
+
+func _on_button_pressed() -> void:
+	SceneSwitcher.start_game()
+	pass # Replace with function body.
