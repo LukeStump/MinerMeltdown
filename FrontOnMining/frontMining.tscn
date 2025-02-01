@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqmoch33p82wq"]
+
+[ext_resource type="PackedScene" uid="uid://dsfyuk14qtsjl" path="res://FrontOnMining/FrontOnIce.tscn" id="1_1q0bg"]
+
+[node name="Mining" type="Node2D"]
+
+[node name="FrontOnIce" parent="." instance=ExtResource("1_1q0bg")]
+position = Vector2(81, 44)
