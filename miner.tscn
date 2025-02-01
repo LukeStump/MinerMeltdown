@@ -8,6 +8,7 @@ radius = 38.0
 height = 194.0
 
 [node name="Miner" type="CharacterBody2D"]
+scale = Vector2(0.114676, 0.114676)
 script = ExtResource("1_05lf5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
