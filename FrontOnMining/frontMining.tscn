@@ -12,3 +12,5 @@ position = Vector2(160, 90)
 
 [node name="Camera" parent="." instance=ExtResource("3_3lr4r")]
 position = Vector2(24, 157)
+
+[connection signal="input_event" from="Camera" to="." method="_on_camera_input_event"]
