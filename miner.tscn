@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bk26rrgchic10"]
 
-[ext_resource type="Script" path="res://miner.gd" id="1_05lf5"]
+[ext_resource type="Script" path="res://Miner/miner.gd" id="1_05lf5"]
 [ext_resource type="Texture2D" uid="uid://h8tpmmdlo64u" path="res://front_normal.png" id="2_qsl0s"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
