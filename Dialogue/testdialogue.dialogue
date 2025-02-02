@@ -7,37 +7,45 @@ Jerry: [next=auto] [wave]KHHK-[/wave] OVER.
 
 ~ no_item
 Jerry: [next=auto] Awww, too bad. [[Womp womp.|Disappointing. Just like my first marriage.|Disappointing. Just like Dunks coffee.|We used to eat ice soup for dinner when I was a kid, you know? Really takes me back.|Hey, that reminds me, you know how much the chowder was at Benny's yesterday? Inflation is no joke, pal.|Sigh..|[wait=0.5] Woah, there's a really cool bug I just saw. Too bad you can't see it. HA!]] Over.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ rock_interact
 Jerry: [next=auto] A rock? [wave]WOW[/wave], what a treasure! NOT. Keep goin. OVER.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ deerskull_interact
 Jerry: [next=auto] Is that a deer? Why was there a freakin deer down this deep? Stupid ass deer if you ask me. OVER.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ tree_interact
 Jerry: [next=auto] That a whole tree?!
 You: [next=auto] A small one.
 Jerry: [next=auto] Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ fish_interact
 Jerry: [next=auto] That is one wicked ugly fish. Is that two tails?? The more the merrier, I guess. OVER.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ satchel_interact
 You: [next=auto] That’s a picture of Jerry and I from the last excavation. I wonder which guy on the team dropped their whole satchel down here?
 You: [next=auto] ...
+SceneSwitcher.end_cutscene()
 => END
 
 ~ notDeer_interact
 Jerry: [next=auto] Now [wave]WHAT[/wave] in God’s Green Earth is that thing? The deers inbreeding now? I wouldn’t wanna hit THAT on the I-95. Jesus Christ. OVER.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ alien_interact
 Jerry: [next=auto] The photo resolution’s kinda blurry on this one. There might be a server disconnection. I don’t even know what I’m lookin at, honestly. Oh well. OVER.
+SceneSwitcher.end_cutscene()
 => END
 
 ~ jerry_interact
