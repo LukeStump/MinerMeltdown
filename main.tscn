@@ -54,7 +54,7 @@ tile_set = SubResource("TileSet_t5fc3")
 position = Vector2(-88, 9)
 
 [node name="Test" parent="." instance=ExtResource("4_ja5c6")]
-position = Vector2(-18, 39)
+position = Vector2(-18, 164)
 object = 1
 
 [node name="Rock" parent="." instance=ExtResource("4_ja5c6")]
