@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://dsfyuk14qtsjl"]
+[gd_scene load_steps=26 format=3 uid="uid://dsfyuk14qtsjl"]
 
 [ext_resource type="Texture2D" uid="uid://dk6xnwicwahd8" path="res://FrontOnMining/Ice/CaveFPNoIce.png" id="1_eigq4"]
 [ext_resource type="Texture2D" uid="uid://do62qlw6kurjq" path="res://FrontOnMining/Ice/Old/CaveFPIceFrontLayer.png" id="1_s0p3g"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://do17428udhpf1" path="res://FrontOnMining/Ice/Old/Ice4.png" id="5_y17k4"]
 [ext_resource type="Texture2D" uid="uid://weqxxy7tpin7" path="res://FrontOnMining/Ice/Old/Ice5.png" id="6_hblxg"]
 [ext_resource type="Texture2D" uid="uid://d1wkcepy7hvjn" path="res://StrangeObjects/JerryDead.png" id="8_2dpmx"]
+[ext_resource type="Texture2D" uid="uid://cwniwbuchs3yx" path="res://StrangeObjects/Alien.png" id="8_un0li"]
 [ext_resource type="Texture2D" uid="uid://gyp275nogfkk" path="res://FrontOnMining/Ice/Ice0.png" id="13_f7dgd"]
 [ext_resource type="Texture2D" uid="uid://5st1ytcycaca" path="res://FrontOnMining/Ice/Ice1.png" id="14_tuotl"]
 [ext_resource type="Texture2D" uid="uid://dfovx6ev45qb7" path="res://FrontOnMining/Ice/Ice2.png" id="15_3m7k0"]
@@ -69,10 +70,16 @@ animations = [{
 "texture": ExtResource("3_csx56")
 }, {
 "duration": 1.0,
+"texture": ExtResource("3_dsl6p")
+}, {
+"duration": 1.0,
 "texture": ExtResource("4_mxaop")
 }, {
 "duration": 1.0,
 "texture": ExtResource("5_7wwjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_un0li")
 }, {
 "duration": 1.0,
 "texture": ExtResource("8_2dpmx")

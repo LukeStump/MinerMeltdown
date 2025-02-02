@@ -39,6 +39,7 @@ func cutscene_ice(res_path, object):
 	cutscene(res_path)
 	
 func cutscene(res_path):
+	#print(res_path)
 	var scene = load(res_path).instantiate()
 	switch_scene(scene, false)
 

@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://boh8ney7lp7lh"]
+[gd_scene load_steps=7 format=3 uid="uid://boh8ney7lp7lh"]
 
 [ext_resource type="Script" path="res://IceThings/ice.gd" id="1_hreht"]
 [ext_resource type="Texture2D" uid="uid://dpsvh6wbxw0tc" path="res://IceThings/IceBlock.png" id="2_ytq2r"]
 [ext_resource type="Texture2D" uid="uid://y5cnvj4osg5a" path="res://IceThings/IceBlockSTUFF.png" id="3_se0lr"]
+[ext_resource type="Texture2D" uid="uid://b1ouv2s3h1t5g" path="res://StrangeObjects/groundsatchel.png" id="4_ag8ng"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4w0bm"]
 size = Vector2(68, 68)
@@ -15,6 +16,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("3_se0lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ag8ng")
 }],
 "loop": true,
 "name": &"default",
