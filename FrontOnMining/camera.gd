@@ -1,18 +1,14 @@
-extends Node2D
-
-@onready var audioPlayer = get_node("Neigh")
+extends Area2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	audioPlayer.play()
 	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_button_pressed() -> void:
-	SceneSwitcher.start_game()
-	pass # Replace with function body.
+func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	if event.is_action_pressed("click"):
+		print("OHRUDFOH")
+	pass

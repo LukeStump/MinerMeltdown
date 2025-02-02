@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqmoch33p82wq"]
+[gd_scene load_steps=4 format=3 uid="uid://cqmoch33p82wq"]
 
 [ext_resource type="PackedScene" uid="uid://dsfyuk14qtsjl" path="res://FrontOnMining/FrontOnIce.tscn" id="1_1q0bg"]
 [ext_resource type="Script" path="res://FrontOnMining/front_mining.gd" id="1_ulgfy"]
+[ext_resource type="PackedScene" uid="uid://uncq7yx4fuis" path="res://FrontOnMining/camera.tscn" id="3_3lr4r"]
 
 [node name="Mining" type="Node2D"]
 script = ExtResource("1_ulgfy")
 
 [node name="FrontOnIce" parent="." instance=ExtResource("1_1q0bg")]
 position = Vector2(160, 90)
+
+[node name="Camera" parent="." instance=ExtResource("3_3lr4r")]
+position = Vector2(24, 157)
