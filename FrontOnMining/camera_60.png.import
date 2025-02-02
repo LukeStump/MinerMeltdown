@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://65wn1u32qcl"
-path="res://.godot/imported/smallflame_3.png-b057d1ab59008f36e9945f26d4d70574.ctex"
+uid="uid://bt2uvkj8h0elv"
+path="res://.godot/imported/camera_60.png-4f2964b8cc245240eda930eb7c36e21c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrontOnMining/flamethrower/smallflame_3.png"
-dest_files=["res://.godot/imported/smallflame_3.png-b057d1ab59008f36e9945f26d4d70574.ctex"]
+source_file="res://FrontOnMining/camera_60.png"
+dest_files=["res://.godot/imported/camera_60.png-4f2964b8cc245240eda930eb7c36e21c.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://dsfyuk14qtsjl"]
+[gd_scene load_steps=27 format=3 uid="uid://dsfyuk14qtsjl"]
 
 [ext_resource type="Texture2D" uid="uid://dk6xnwicwahd8" path="res://FrontOnMining/Ice/CaveFPNoIce.png" id="1_eigq4"]
 [ext_resource type="Texture2D" uid="uid://do62qlw6kurjq" path="res://FrontOnMining/Ice/Old/CaveFPIceFrontLayer.png" id="1_s0p3g"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bhylekhofmxxf" path="res://StrangeObjects/FuckedUpFish1.png" id="4_mxaop"]
 [ext_resource type="Texture2D" uid="uid://bf3udrjoaraoh" path="res://StrangeObjects/NotDeer.png" id="5_7wwjt"]
 [ext_resource type="Texture2D" uid="uid://do17428udhpf1" path="res://FrontOnMining/Ice/Old/Ice4.png" id="5_y17k4"]
+[ext_resource type="Texture2D" uid="uid://daku3nu13fhg7" path="res://StrangeObjects/TreeJam.png" id="6_frqre"]
 [ext_resource type="Texture2D" uid="uid://weqxxy7tpin7" path="res://FrontOnMining/Ice/Old/Ice5.png" id="6_hblxg"]
 [ext_resource type="Texture2D" uid="uid://d1wkcepy7hvjn" path="res://StrangeObjects/JerryDead.png" id="8_2dpmx"]
 [ext_resource type="Texture2D" uid="uid://cwniwbuchs3yx" path="res://StrangeObjects/Alien.png" id="8_un0li"]
@@ -70,7 +71,7 @@ animations = [{
 "texture": ExtResource("3_csx56")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_dsl6p")
+"texture": ExtResource("6_frqre")
 }, {
 "duration": 1.0,
 "texture": ExtResource("4_mxaop")

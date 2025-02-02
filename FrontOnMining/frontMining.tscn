@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqmoch33p82wq"]
+[gd_scene load_steps=6 format=3 uid="uid://cqmoch33p82wq"]
 
 [ext_resource type="PackedScene" uid="uid://dsfyuk14qtsjl" path="res://FrontOnMining/FrontOnIce.tscn" id="1_1q0bg"]
 [ext_resource type="Script" path="res://FrontOnMining/front_mining.gd" id="1_ulgfy"]
 [ext_resource type="PackedScene" uid="uid://uncq7yx4fuis" path="res://FrontOnMining/camera.tscn" id="3_3lr4r"]
 [ext_resource type="PackedScene" uid="uid://bdqvqj66awjcl" path="res://FrontOnMining/flamethrower/flamethrower.tscn" id="4_gdwie"]
+[ext_resource type="AudioStream" uid="uid://k2beoqnep7u3" path="res://FrontOnMining/cameraCLICK.wav" id="5_5scrc"]
 
 [node name="Mining" type="Node2D"]
 script = ExtResource("1_ulgfy")
@@ -12,9 +13,12 @@ script = ExtResource("1_ulgfy")
 position = Vector2(160, 90)
 
 [node name="Camera" parent="." instance=ExtResource("3_3lr4r")]
-position = Vector2(24, 157)
+position = Vector2(24, 156)
 
 [node name="Flamethrower" parent="." instance=ExtResource("4_gdwie")]
 position = Vector2(160, 90)
+
+[node name="click" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_5scrc")
 
 [connection signal="input_event" from="Camera" to="." method="_on_camera_input_event"]
