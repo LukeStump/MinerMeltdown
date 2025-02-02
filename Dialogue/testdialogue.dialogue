@@ -50,7 +50,7 @@ Jerry: The photo resolution’s kinda blurry on this one. There might be a serve
 
 ~ jerry_interact
 Jerry: Hello? [wait=0.5] I'm walkie-talkin to you! [wait=0.5] What did you find?
-Jerry??:[next=3] You still there?
+Jerry??: [next=3] You still there?
 {{SceneSwitcher.credits()}}
 
-=> END
+=> END 
