@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpsvh6wbxw0tc"
-path="res://.godot/imported/IceBlock.png-a81a2ef067836f85fb1dd2e80646b5e5.ctex"
+uid="uid://bcnjl0nrh7cwx"
+path="res://.godot/imported/DeerSkull.png-02a9552cc8f56feef9cbf4c30279382e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IceThings/IceBlock.png"
-dest_files=["res://.godot/imported/IceBlock.png-a81a2ef067836f85fb1dd2e80646b5e5.ctex"]
+source_file="res://StrangeObjects/DeerSkull.png"
+dest_files=["res://.godot/imported/DeerSkull.png-02a9552cc8f56feef9cbf4c30279382e.ctex"]
 
 [params]
 

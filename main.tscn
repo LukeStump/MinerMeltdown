@@ -1,8 +1,7 @@
-[gd_scene load_steps=13 format=4 uid="uid://cv8gnur8cpwwq"]
+[gd_scene load_steps=14 format=4 uid="uid://cv8gnur8cpwwq"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_7pk7y"]
 [ext_resource type="PackedScene" uid="uid://dkmg7anlmcbpk" path="res://Miner/miner.tscn" id="2_t7m4j"]
-
 [ext_resource type="PackedScene" uid="uid://boh8ney7lp7lh" path="res://IceThings/Ice.tscn" id="4_ja5c6"]
 [ext_resource type="Texture2D" uid="uid://chro7xoammedg" path="res://Background/bg_black.png" id="5_pdoyw"]
 [ext_resource type="Texture2D" uid="uid://dwhsmtoloen7y" path="res://Background/bg_1.png" id="5_qoudf"]
@@ -37,6 +36,9 @@ sources/1 = SubResource("TileSetAtlasSource_6rkjm")
 sources/2 = SubResource("TileSetAtlasSource_m6ujq")
 sources/3 = SubResource("TileSetAtlasSource_k1uv2")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5qjwf"]
+normal = Vector2(0.999991, -0.00423725)
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_7pk7y")
 
@@ -45,7 +47,7 @@ tile_map_data = PackedByteArray("AAD//wAAAAAAAAAAAAD+/wAAAAAAAAAAAAD+////AAAAAAA
 tile_set = SubResource("TileSet_t5fc3")
 
 [node name="Miner" parent="." instance=ExtResource("2_t7m4j")]
-position = Vector2(504, 9)
+position = Vector2(-134, 9)
 
 [node name="Ice" parent="." instance=ExtResource("4_ja5c6")]
 position = Vector2(99, 7)
@@ -55,9 +57,17 @@ position = Vector2(235, 7)
 
 [node name="Ice3" parent="." instance=ExtResource("4_ja5c6")]
 position = Vector2(167, 7)
+object = 1
 
 [node name="Ice4" parent="." instance=ExtResource("4_ja5c6")]
 position = Vector2(303, 7)
+object = 2
 
 [node name="Ice5" parent="." instance=ExtResource("4_ja5c6")]
 position = Vector2(371, 7)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-161, 17)
+shape = SubResource("WorldBoundaryShape2D_5qjwf")

@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://Miner/miner.gd" id="1_05lf5"]
 [ext_resource type="Texture2D" uid="uid://cogp6jxvygrgb" path="res://Miner/MINERstill.png" id="2_ry38b"]
 [ext_resource type="Texture2D" uid="uid://ceyer64wf1brb" path="res://Miner/MinerWalk1-sheetUPSCALED.png" id="3_pbnml"]
-[ext_resource type="Texture2D" uid="uid://d2nffvc32u1g4" path="res://IceThings/IceBlock.png" id="4_a0gir"]
 [ext_resource type="Texture2D" uid="uid://chro7xoammedg" path="res://Background/bg_black.png" id="5_45hp7"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjl1q"]
@@ -56,6 +55,9 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ms5da"]
+load_path = "res://.godot/imported/IceBlockXXXX.png-6c1c088b565bc7059b6ffc49453e386f.ctex"
+
 [node name="Miner" type="CharacterBody2D"]
 script = ExtResource("1_05lf5")
 
@@ -77,7 +79,7 @@ animation = &"new_animation"
 [node name="IceBlock" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(63, -2)
-texture = ExtResource("4_a0gir")
+texture = SubResource("CompressedTexture2D_ms5da")
 
 [node name="BgBlack" type="Sprite2D" parent="."]
 position = Vector2(-9.77516e-06, 63)

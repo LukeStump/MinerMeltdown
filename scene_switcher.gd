@@ -3,6 +3,8 @@ extends Node
 var current_scene = null
 var main_scene = null
 
+var object_num = 0
+
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit()
@@ -12,6 +14,10 @@ func _ready() -> void:
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
 	print(current_scene)
+	
+func cutscene_ice(res_path, object):
+	object_num = object
+	cutscene(res_path)
 	
 func cutscene(res_path):
 	var scene = load(res_path).instantiate()
