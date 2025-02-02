@@ -33,18 +33,22 @@ func _ready() -> void:
 	#print(object)
 	object.frame = SceneSwitcher.object_num
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
+func is_melted():
+	return frontIce.frame == 5
+
+func melt():
+	frontIce.frame += 1
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_action_pressed(\"click\"):
 		#print(\"hello\")
-		if frontIce.frame == 5:
+		if is_melted():
 			SceneSwitcher.end_cutscene()
-		frontIce.frame += 1
+		melt()
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6wsn"]

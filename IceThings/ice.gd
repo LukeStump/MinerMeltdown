@@ -10,8 +10,10 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	input_pickable = true
 
-func _input_event (viewport:Viewport, event:InputEvent, shape_idx:int) -> void:
-	if event.is_action_pressed("click"):
-		SceneSwitcher.cutscene_ice("res://FrontOnMining/frontMining.tscn",object)
-		#get_tree().change_scene_to_file("res://FrontOnMining/frontMining.tscn")
-		queue_free()
+func melt_ice_scene():
+	SceneSwitcher.cutscene_ice("res://FrontOnMining/frontMining.tscn",object)
+	queue_free()
+
+#func _input_event (viewport:Viewport, event:InputEvent, shape_idx:int) -> void:
+	#if event.is_action_pressed("click"):
+		#melt_ice_scene()
