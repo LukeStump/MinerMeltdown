@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsuq3twph1jk"]
+
+[ext_resource type="Script" path="res://credits/credits.gd" id="1_mqs1o"]
+[ext_resource type="Texture2D" uid="uid://bktevpi8c2wj7" path="res://credits/credits (3).png" id="2_1m0jt"]
+[ext_resource type="AudioStream" uid="uid://duf657i3khjg2" path="res://credits/Miner Song (extended version).wav" id="3_yer4w"]
+
+[node name="Credits" type="Node2D"]
+script = ExtResource("1_mqs1o")
+speed = 40
+max_disp = 1824
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(160, 1002)
+texture = ExtResource("2_1m0jt")
+
+[node name="Song" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_yer4w")
+volume_db = 5.0
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 99.0
+offset_top = 22.0
+offset_right = 211.0
+offset_bottom = 71.0
+text = "Credits:
+Luke is so cool"

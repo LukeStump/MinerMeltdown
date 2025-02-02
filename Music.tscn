@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1ko7w4c45ymk"]
+
+[ext_resource type="AudioStream" uid="uid://c02a2t4miurnn" path="res://Ambient Miner Music (loop capable, clipped).wav" id="1_anjuv"]
+[ext_resource type="Script" path="res://music.gd" id="1_m2sl2"]
+[ext_resource type="AudioStream" uid="uid://gcuh8ur60ugc" path="res://FrontOnMining/RadioBeepBeep.wav" id="3_efipb"]
+
+[node name="Music" type="Node2D"]
+script = ExtResource("1_m2sl2")
+
+[node name="AmbientMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_anjuv")
+volume_db = 5.0
+autoplay = true
+
+[node name="radio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_efipb")
+volume_db = -8.247

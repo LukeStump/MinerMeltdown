@@ -22,9 +22,7 @@ var dialogue_names = ["no_item", "rock_interact", "deerskull_interact", "tree_in
 func dialogue():
 	if current_scene != main_scene:
 		# in cutscene
-		print("cutscene dialogue: " + str(object_num))
 		show_dialogue(dialogue_names[object_num])
-		
 		pass
 	else:
 		# starting dialogue
@@ -32,6 +30,7 @@ func dialogue():
 		pass
 
 func show_dialogue(name):
+	Music.radio_beep()
 	DialogueManager.show_example_dialogue_balloon(load(dialogue_path), name)
 
 func cutscene_ice(res_path, object):
@@ -52,6 +51,10 @@ func start_game():
 	
 func switch_scene(scene, free):
 	call_deferred("_deffered_switch_scene", scene, free)
+
+func credits():
+	cutscene("res://credits/credits.tscn")
+	pass
 
 func _deffered_switch_scene(scene, free):
 	if free:
