@@ -1,7 +1,12 @@
 ~ start
-Jerry: Alright pal. You’re gonna go into these here ice mines, and melt as much shit out of the ice as you can, then photograph it for the museum. 
+Jerry: Alright pal. I know you might be a bit rusty since the last time we went on an excavation, so I’ll help you along with this incredible cutting-edge walkie talkie. 
+Jerry: You’re gonna go into these here ice mines, and melt as much crap out of the ice as you can, then photograph it for the museum. 
 Jerry: Everytime you take a photo of something, It’ll automatically upload to the server and I’ll be able to see it, too.
-Jerry: I know you might be a bit rusty since the last time we went, so I’ll help you along. [wave]KHHK-[/wave] OVER.
+Jerry: [wave]KHHK-[/wave] OVER.
+=> END
+
+~ no_item
+Jerry: Awww, too bad. [[Womp womp.|Disappointing. Just like my first marriage.|Disappointing. Just like Dunks coffee.|We used to eat ice soup for dinner when I was a kid, you know? Really takes me back.|Hey, that reminds me, you know how much the chowder was at Benny's yesterday? Inflation is no joke, pal.|Sigh..|[wait=0.5] Woah, there's a really cool bug I just saw. Too bad you can't see it. HA!]] Over.
 => END
 
 ~ rock_interact
@@ -13,6 +18,8 @@ Jerry: Is that a deer? Why was there a freakin deer down this deep? Stupid ass d
 => END
 
 ~ tree_interact
+Jerry: That a whole tree?!
+You: A small one.
 Jerry: Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
 => END
 
@@ -34,7 +41,7 @@ Jerry: The photo resolution’s kinda blurry on this one. There might be a serve
 => END
 
 ~ jerry_interact
-Jerry: Hello? [wait=0.5] I'm talkie-walkin to you! [wait=0.5] What did you find?
+Jerry: Hello? [wait=0.5] I'm walkie-talkin to you! [wait=0.5] What did you find?
 You still there?
 
 => END
