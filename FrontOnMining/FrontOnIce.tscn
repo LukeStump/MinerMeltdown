@@ -43,12 +43,12 @@ func is_melted():
 func melt():
 	frontIce.frame += 1
 
-func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
-	if event.is_action_pressed(\"click\"):
-		#print(\"hello\")
-		if is_melted():
-			SceneSwitcher.end_cutscene()
-		melt()
+#func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
+	#if event.is_action_pressed(\"click\"):
+		##print(\"hello\")
+		#if is_melted():
+			#SceneSwitcher.end_cutscene()
+		#melt()
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6wsn"]
