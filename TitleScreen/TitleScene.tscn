@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://c1q5ydwbd01on"]
+
+[ext_resource type="Script" path="res://TitleScreen/title_scene.gd" id="1_0wnat"]
+[ext_resource type="Texture2D" uid="uid://chro7xoammedg" path="res://Background/bg_black.png" id="2_gmhe7"]
+[ext_resource type="Texture2D" uid="uid://d60202muml4s" path="res://TitleScreen/hh_frame1.png" id="3_wl0g6"]
+[ext_resource type="Texture2D" uid="uid://dxth1v82pouxw" path="res://TitleScreen/hh_frame2.png" id="4_d2chu"]
+[ext_resource type="Texture2D" uid="uid://bt2dkvct7htjx" path="res://TitleScreen/hh_frame3.png" id="5_nn5vq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kpu5f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wl0g6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d2chu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nn5vq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_d2chu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="TitleScene" type="Node2D"]
+script = ExtResource("1_0wnat")
+
+[node name="BgBlack" type="Sprite2D" parent="."]
+position = Vector2(157.5, 96.5)
+scale = Vector2(6.9, 4.18)
+texture = ExtResource("2_gmhe7")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 134.0
+offset_top = 117.0
+offset_right = 180.0
+offset_bottom = 148.0
+text = "Start"
+
+[node name="HorseLogo" type="AnimatedSprite2D" parent="."]
+position = Vector2(156, 54)
+sprite_frames = SubResource("SpriteFrames_kpu5f")
+frame = 3
+frame_progress = 0.107462
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
