@@ -7,4 +7,4 @@
 script = ExtResource("1_ulgfy")
 
 [node name="FrontOnIce" parent="." instance=ExtResource("1_1q0bg")]
-position = Vector2(81, 44)
+position = Vector2(160, 90)

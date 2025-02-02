@@ -1,37 +1,31 @@
-[gd_scene load_steps=8 format=3 uid="uid://dsfyuk14qtsjl"]
+[gd_scene load_steps=17 format=3 uid="uid://dsfyuk14qtsjl"]
 
-[ext_resource type="Texture2D" uid="uid://dfroj6w043cro" path="res://FrontOnMining/idkice1.png" id="1_67ejs"]
-[ext_resource type="Texture2D" uid="uid://tbkxo8jjmu1x" path="res://FrontOnMining/idkice2.png" id="2_5n274"]
-[ext_resource type="Texture2D" uid="uid://5g258g5t48jd" path="res://FrontOnMining/idkice3.png" id="3_r4r46"]
-[ext_resource type="Texture2D" uid="uid://cewvrh27w6wsy" path="res://FrontOnMining/idkice4.png" id="4_wxdpd"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_kmly2"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_67ejs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_5n274")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_r4r46")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_wxdpd")
-}],
-"loop": false,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="Texture2D" uid="uid://dk6xnwicwahd8" path="res://FrontOnMining/Ice/CaveFPNoIce.png" id="1_eigq4"]
+[ext_resource type="Texture2D" uid="uid://do62qlw6kurjq" path="res://FrontOnMining/Ice/CaveFPIceFrontLayer.png" id="1_s0p3g"]
+[ext_resource type="Texture2D" uid="uid://dmcbxq0bdbn7f" path="res://FrontOnMining/Ice/CaveFPIceBackLayer.png" id="2_sy6fb"]
+[ext_resource type="Texture2D" uid="uid://chwiqt5b84mj0" path="res://FrontOnMining/Ice/Ice1.png" id="2_vytvt"]
+[ext_resource type="Texture2D" uid="uid://bcnjl0nrh7cwx" path="res://StrangeObjects/DeerSkull.png" id="3_csx56"]
+[ext_resource type="Texture2D" uid="uid://chbel2u8he0uo" path="res://StrangeObjects/blank.png" id="3_dsl6p"]
+[ext_resource type="Texture2D" uid="uid://vsc7fkyef0l3" path="res://FrontOnMining/Ice/Ice2.png" id="3_skbel"]
+[ext_resource type="Texture2D" uid="uid://c5nn306icn66s" path="res://FrontOnMining/Ice/Ice3.png" id="4_dhdkr"]
+[ext_resource type="Texture2D" uid="uid://bhylekhofmxxf" path="res://StrangeObjects/FuckedUpFish1.png" id="4_mxaop"]
+[ext_resource type="Texture2D" uid="uid://bf3udrjoaraoh" path="res://StrangeObjects/NotDeer.png" id="5_7wwjt"]
+[ext_resource type="Texture2D" uid="uid://do17428udhpf1" path="res://FrontOnMining/Ice/Ice4.png" id="5_y17k4"]
+[ext_resource type="Texture2D" uid="uid://weqxxy7tpin7" path="res://FrontOnMining/Ice/Ice5.png" id="6_hblxg"]
 
 [sub_resource type="GDScript" id="GDScript_epi0n"]
-script/source = "extends AnimatedSprite2D
+script/source = "extends Node2D
 
+@onready
+var frontIce = get_child(4)
+@onready
+var object = get_child(3)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	print(frontIce)
+	print(object)
+	object.frame = SceneSwitcher.object_num
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -41,17 +35,62 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
 	if event.is_action_pressed(\"click\"):
-		if frame == 3:
+		#print(\"hello\")
+		if frontIce.frame == 5:
 			SceneSwitcher.end_cutscene()
-		frame += 1
+		frontIce.frame += 1
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6wsn"]
-size = Vector2(130, 128)
+size = Vector2(26.075, 19.2178)
 
-[node name="FrontOnIce" type="AnimatedSprite2D"]
-scale = Vector2(0.038503, 0.038503)
-sprite_frames = SubResource("SpriteFrames_kmly2")
+[sub_resource type="SpriteFrames" id="SpriteFrames_jj6w0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_dsl6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_csx56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mxaop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7wwjt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8nwv7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s0p3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vytvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_skbel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dhdkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_y17k4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hblxg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="FrontOnIce" type="Node2D"]
 script = SubResource("GDScript_epi0n")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -59,5 +98,19 @@ script = SubResource("GDScript_epi0n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(12.1956, 9.26227)
 shape = SubResource("RectangleShape2D_a6wsn")
+
+[node name="BackGround" type="Sprite2D" parent="."]
+scale = Vector2(1, 1)
+texture = ExtResource("1_eigq4")
+
+[node name="BackIce" type="Sprite2D" parent="."]
+scale = Vector2(1, 1)
+texture = ExtResource("2_sy6fb")
+
+[node name="Object" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jj6w0")
+
+[node name="FrontIce" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8nwv7")
 
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

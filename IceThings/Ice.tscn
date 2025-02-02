@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://boh8ney7lp7lh"]
 
 [ext_resource type="Script" path="res://IceThings/ice.gd" id="1_hreht"]
-[ext_resource type="Texture2D" uid="uid://d2nffvc32u1g4" path="res://IceThings/IceBlock.png" id="2_ytq2r"]
+[ext_resource type="Texture2D" uid="uid://dpsvh6wbxw0tc" path="res://IceThings/IceBlock.png" id="2_ytq2r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4w0bm"]
 size = Vector2(68, 68)

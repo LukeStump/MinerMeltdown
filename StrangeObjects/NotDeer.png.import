@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpsvh6wbxw0tc"
-path="res://.godot/imported/IceBlock.png-a81a2ef067836f85fb1dd2e80646b5e5.ctex"
+uid="uid://bf3udrjoaraoh"
+path="res://.godot/imported/NotDeer.png-12f1f760d6010c8f438700d5f5d48faa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IceThings/IceBlock.png"
-dest_files=["res://.godot/imported/IceBlock.png-a81a2ef067836f85fb1dd2e80646b5e5.ctex"]
+source_file="res://StrangeObjects/NotDeer.png"
+dest_files=["res://.godot/imported/NotDeer.png-12f1f760d6010c8f438700d5f5d48faa.ctex"]
 
 [params]
 
