@@ -22,7 +22,7 @@ Jerry: Is that a deer? Why was there a freakin deer down this deep? Stupid ass d
 
 ~ tree_interact
 Jerry: That a whole tree?!
-You: A small one.
+You: ...[wait=0.5]Uhh yeah, a small one.
 Jerry: Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
 {{SceneSwitcher.end_cutscene()}}
 => END
@@ -51,5 +51,6 @@ Jerry: The photo resolution’s kinda blurry on this one. There might be a serve
 ~ jerry_interact
 Jerry: Hello? [wait=0.5] I'm walkie-talkin to you! [wait=0.5] What did you find?
 [next=auto] You still there?
+{{SceneSwitcher.credits()}}
 
 => END
