@@ -1,10 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://boh8ney7lp7lh"]
+[gd_scene load_steps=6 format=3 uid="uid://boh8ney7lp7lh"]
 
 [ext_resource type="Script" path="res://IceThings/ice.gd" id="1_hreht"]
 [ext_resource type="Texture2D" uid="uid://dpsvh6wbxw0tc" path="res://IceThings/IceBlock.png" id="2_ytq2r"]
+[ext_resource type="Texture2D" uid="uid://y5cnvj4osg5a" path="res://IceThings/IceBlockSTUFF.png" id="3_se0lr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4w0bm"]
 size = Vector2(68, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_542do"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ytq2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_se0lr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Ice" type="StaticBody2D"]
 script = ExtResource("1_hreht")
@@ -12,5 +27,5 @@ script = ExtResource("1_hreht")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_4w0bm")
 
-[node name="IceBlock" type="Sprite2D" parent="."]
-texture = ExtResource("2_ytq2r")
+[node name="IceBlock" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_542do")

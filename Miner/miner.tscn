@@ -60,7 +60,6 @@ animations = [{
 }]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ms5da"]
-load_path = "res://.godot/imported/IceBlockXXXX.png-6c1c088b565bc7059b6ffc49453e386f.ctex"
 
 [node name="Miner" type="CharacterBody2D"]
 script = ExtResource("1_05lf5")

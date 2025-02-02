@@ -2,8 +2,12 @@ extends StaticBody2D
 
 @export var object = 0
 
+@onready var ice = get_child(1)
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	if object != 0:
+		ice.frame = 1
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
