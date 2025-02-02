@@ -1,47 +1,47 @@
 ~ start
-Jerry: Alright pal. I know you might be a bit rusty since the last time we went on an excavation, so I’ll help you along with this incredible cutting-edge walkie talkie. 
-Jerry: You’re gonna go into these here ice mines, and melt as much crap out of the ice as you can, then photograph it for the museum. 
-Jerry: Everytime you take a photo of something, It’ll automatically upload to the server and I’ll be able to see it, too.
-Jerry: [wave]KHHK-[/wave] OVER.
+Jerry: [next=auto] Alright pal. I know you might be a bit rusty since the last time we went on an excavation, so I’ll help you along with this incredible cutting-edge walkie talkie. 
+Jerry: [next=auto] You’re gonna go into these here ice mines, and melt as much crap out of the ice as you can, then photograph it for the museum. 
+Jerry: [next=auto] Everytime you take a photo of something, It’ll automatically upload to the server and I’ll be able to see it, too.
+Jerry: [next=auto] [wave]KHHK-[/wave] OVER.
 => END
 
 ~ no_item
-Jerry: Awww, too bad. [[Womp womp.|Disappointing. Just like my first marriage.|Disappointing. Just like Dunks coffee.|We used to eat ice soup for dinner when I was a kid, you know? Really takes me back.|Hey, that reminds me, you know how much the chowder was at Benny's yesterday? Inflation is no joke, pal.|Sigh..|[wait=0.5] Woah, there's a really cool bug I just saw. Too bad you can't see it. HA!]] Over.
+Jerry: [next=auto] Awww, too bad. [[Womp womp.|Disappointing. Just like my first marriage.|Disappointing. Just like Dunks coffee.|We used to eat ice soup for dinner when I was a kid, you know? Really takes me back.|Hey, that reminds me, you know how much the chowder was at Benny's yesterday? Inflation is no joke, pal.|Sigh..|[wait=0.5] Woah, there's a really cool bug I just saw. Too bad you can't see it. HA!]] Over.
 => END
 
 ~ rock_interact
-Jerry: A rock? [wave]WOW[/wave], what a treasure! NOT. Keep goin. OVER.
+Jerry: [next=auto] A rock? [wave]WOW[/wave], what a treasure! NOT. Keep goin. OVER.
 => END
 
 ~ deerskull_interact
-Jerry: Is that a deer? Why was there a freakin deer down this deep? Stupid ass deer if you ask me. OVER.
+Jerry: [next=auto] Is that a deer? Why was there a freakin deer down this deep? Stupid ass deer if you ask me. OVER.
 => END
 
 ~ tree_interact
-Jerry: That a whole tree?!
-You: A small one.
-Jerry: Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
+Jerry: [next=auto] That a whole tree?!
+You: [next=auto] A small one.
+Jerry: [next=auto] Ahh, very pretty. Not a lot of trees down here. Lonely existence probably. That's tough. OVER.
 => END
 
 ~ fish_interact
-Jerry: That is one wicked ugly fish. Is that two tails?? The more the merrier, I guess. OVER.
+Jerry: [next=auto] That is one wicked ugly fish. Is that two tails?? The more the merrier, I guess. OVER.
 => END
 
 ~ satchel_interact
-You: That’s a picture of Jerry and I from the last excavation. I wonder which guy on the team dropped their whole satchel down here?
-You: ...
+You: [next=auto] That’s a picture of Jerry and I from the last excavation. I wonder which guy on the team dropped their whole satchel down here?
+You: [next=auto] ...
 => END
 
 ~ notDeer_interact
-Jerry: Now [wave]WHAT[/wave] in God’s Green Earth is that thing? The deers inbreeding now? I wouldn’t wanna hit THAT on the I-95. Jesus Christ. OVER.
+Jerry: [next=auto] Now [wave]WHAT[/wave] in God’s Green Earth is that thing? The deers inbreeding now? I wouldn’t wanna hit THAT on the I-95. Jesus Christ. OVER.
 => END
 
 ~ alien_interact
-Jerry: The photo resolution’s kinda blurry on this one. There might be a server disconnection. I don’t even know what I’m lookin at, honestly. Oh well. OVER.
+Jerry: [next=auto] The photo resolution’s kinda blurry on this one. There might be a server disconnection. I don’t even know what I’m lookin at, honestly. Oh well. OVER.
 => END
 
 ~ jerry_interact
-Jerry: Hello? [wait=0.5] I'm walkie-talkin to you! [wait=0.5] What did you find?
-You still there?
+Jerry: [next=auto] Hello? [wait=0.5] I'm walkie-talkin to you! [wait=0.5] What did you find?
+[next=auto] You still there?
 
 => END
