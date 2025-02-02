@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do62qlw6kurjq"
-path="res://.godot/imported/CaveFPIceFrontLayer.png-517aa6cf390020f5db9b520cf1458d67.ctex"
+uid="uid://cuccjhhxldsmf"
+path="res://.godot/imported/bg_1UPSCALED.png-36b9d0ff898525533c5b02ca08babb5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrontOnMining/Ice/CaveFPIceFrontLayer.png"
-dest_files=["res://.godot/imported/CaveFPIceFrontLayer.png-517aa6cf390020f5db9b520cf1458d67.ctex"]
+source_file="res://TitleScreen/bg_1UPSCALED.png"
+dest_files=["res://.godot/imported/bg_1UPSCALED.png-36b9d0ff898525533c5b02ca08babb5d.ctex"]
 
 [params]
 

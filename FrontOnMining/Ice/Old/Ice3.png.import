@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7sl6yv4i6vfi"
-path="res://.godot/imported/Ice3.png-00fd2802274eb8c504552a144b26a177.ctex"
+uid="uid://c5nn306icn66s"
+path="res://.godot/imported/Ice3.png-8de6191b21d2d97782aef6ec7223e556.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://FrontOnMining/Ice/Ice3.png"
-dest_files=["res://.godot/imported/Ice3.png-00fd2802274eb8c504552a144b26a177.ctex"]
+source_file="res://FrontOnMining/Ice/Old/Ice3.png"
+dest_files=["res://.godot/imported/Ice3.png-8de6191b21d2d97782aef6ec7223e556.ctex"]
 
 [params]
 

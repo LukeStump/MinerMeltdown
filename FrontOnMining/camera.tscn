@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://uncq7yx4fuis"]
+
+[ext_resource type="Texture2D" uid="uid://ccjt4wu8h82lu" path="res://FrontOnMining/camera_icon.png" id="1_2pvnx"]
+[ext_resource type="Script" path="res://FrontOnMining/camera.gd" id="1_yn1lc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqkde"]
+size = Vector2(42, 40)
+
+[node name="Camera" type="Area2D"]
+script = ExtResource("1_yn1lc")
+
+[node name="CameraIcon" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_2pvnx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bqkde")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
