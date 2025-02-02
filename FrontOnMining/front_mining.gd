@@ -27,7 +27,8 @@ func _process(delta: float) -> void:
 func click_camera():
 	if ice.is_melted():
 #		#TODO add flash and dialogue
-		SceneSwitcher.end_cutscene()
+		SceneSwitcher.dialogue()
+		#SceneSwitcher.end_cutscene()
 
 #func _input(event):
 	#if event.is_action_just_pressed("mine"):

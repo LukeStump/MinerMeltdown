@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdqvqj66awjcl"]
+[gd_scene load_steps=14 format=3 uid="uid://bdqvqj66awjcl"]
 
 [ext_resource type="Texture2D" uid="uid://bke0mphrer65l" path="res://FrontOnMining/flamethrower/smallflame_1.png" id="1_atvhr"]
 [ext_resource type="Script" path="res://FrontOnMining/flamethrower/flamethrower.gd" id="1_o4vg4"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dgl1l62xdohwc" path="res://FrontOnMining/flamethrower/bigflame_2.png" id="7_lrr0e"]
 [ext_resource type="Texture2D" uid="uid://cc8b4i4osnjwx" path="res://FrontOnMining/flamethrower/bigflame_3.png" id="8_7kor3"]
 [ext_resource type="Texture2D" uid="uid://c7v63vujrol4j" path="res://FrontOnMining/flamethrower/bigflame_4.png" id="9_yijra"]
+[ext_resource type="AudioStream" uid="uid://fmvbktm00iqq" path="res://FrontOnMining/flamethrower/BlowTorch.mp3" id="11_yk80k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1bh2t"]
 animations = [{
@@ -75,3 +76,6 @@ sprite_frames = SubResource("SpriteFrames_1bh2t")
 [node name="flame" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_8ijx2")
 animation = &"flame_up"
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_yk80k")

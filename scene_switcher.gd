@@ -8,13 +8,32 @@ var object_num = 0
 func _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit()
+	#if event.is_action_pressed("click"):
+		#dialogue()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	var root = get_tree().root
 	current_scene = root.get_child(root.get_child_count() - 1)
-	print(current_scene)
-	
+	#print(current_scene)
+
+var dialogue_path = "res://Dialogue/testdialogue.dialogue"
+var dialogue_names = ["no_item", "rock_interact", "deerskull_interact", "tree_interact", "fish_interact", "notDeer_interact", "alien_interact", "jerry_interact"]
+func dialogue():
+	if current_scene != main_scene:
+		# in cutscene
+		print("cutscene dialogue: " + str(object_num))
+		show_dialogue(dialogue_names[object_num])
+		
+		pass
+	else:
+		# starting dialogue
+		show_dialogue("start")
+		pass
+
+func show_dialogue(name):
+	DialogueManager.show_example_dialogue_balloon(load(dialogue_path), name)
+
 func cutscene_ice(res_path, object):
 	object_num = object
 	cutscene(res_path)
