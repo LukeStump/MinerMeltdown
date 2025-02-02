@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://y3s14mh4dwrj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g5iv6"]
+
+[node name="Flamethrower" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_g5iv6")

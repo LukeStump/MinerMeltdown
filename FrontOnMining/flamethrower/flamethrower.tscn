@@ -1,0 +1,81 @@
+[gd_scene load_steps=14 format=3 uid="uid://bdqvqj66awjcl"]
+
+[ext_resource type="Texture2D" uid="uid://bke0mphrer65l" path="res://FrontOnMining/flamethrower/smallflame_1.png" id="1_atvhr"]
+[ext_resource type="Script" path="res://FrontOnMining/flamethrower/flamethrower.gd" id="1_o4vg4"]
+[ext_resource type="Texture2D" uid="uid://syjjmjxbt2al" path="res://FrontOnMining/flamethrower/smallflame_2.png" id="2_ifv4u"]
+[ext_resource type="Texture2D" uid="uid://eu64tkmn81ia" path="res://FrontOnMining/flamethrower/smallflame_3.png" id="3_3456f"]
+[ext_resource type="Texture2D" uid="uid://brbqhrs1fi2c8" path="res://FrontOnMining/flamethrower/smallflame_4.png" id="4_6a60h"]
+[ext_resource type="Texture2D" uid="uid://chbel2u8he0uo" path="res://StrangeObjects/blank.png" id="5_tlpsy"]
+[ext_resource type="Texture2D" uid="uid://rnnob15cll15" path="res://FrontOnMining/flamethrower/bigflame_1.png" id="6_sjc6g"]
+[ext_resource type="Texture2D" uid="uid://dgl1l62xdohwc" path="res://FrontOnMining/flamethrower/bigflame_2.png" id="7_lrr0e"]
+[ext_resource type="Texture2D" uid="uid://cc8b4i4osnjwx" path="res://FrontOnMining/flamethrower/bigflame_3.png" id="8_7kor3"]
+[ext_resource type="Texture2D" uid="uid://c7v63vujrol4j" path="res://FrontOnMining/flamethrower/bigflame_4.png" id="9_yijra"]
+[ext_resource type="AudioStream" uid="uid://fmvbktm00iqq" path="res://FrontOnMining/flamethrower/BlowTorch.mp3" id="11_yk80k"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1bh2t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_atvhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ifv4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_3456f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6a60h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8ijx2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_7kor3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yijra")
+}],
+"loop": true,
+"name": &"flame_sustain",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_tlpsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_sjc6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lrr0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7kor3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yijra")
+}],
+"loop": true,
+"name": &"flame_up",
+"speed": 12.0
+}]
+
+[node name="Flamethrower" type="Node2D"]
+position = Vector2(0, 1)
+script = ExtResource("1_o4vg4")
+
+[node name="flamethrower" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1bh2t")
+
+[node name="flame" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8ijx2")
+animation = &"flame_up"
+
+[node name="audio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_yk80k")
